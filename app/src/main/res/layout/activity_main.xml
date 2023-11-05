@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="ROLL THE DICE"
+        android:background="@color/purple"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:fontFamily="monospace"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/app_title"
+        android:background="@color/purple"
+        android:text="Mereal Kate C. Silvestre"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+    <ImageView
+        android:id="@+id/first_dice"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="45dp"
+        android:src="@drawable/d1"
+        android:tint="#70b2f7ef"
+        tools:ignore="UseAppTint"
+        android:layout_marginTop="200dp"/>
+
+    <ImageView
+        android:id="@+id/second_dice"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="30dp"
+        android:tint="#70b2f7ef"
+        tools:ignore="UseAppTint"
+        android:layout_toRightOf="@id/first_dice"
+        android:src="@drawable/d1"
+        android:layout_marginTop="200dp"/>
+
+    <Button
+        android:id="@+id/roll"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true"
+        android:text="MAKE ME ROLL!"
+        android:backgroundTint="@color/purple"
+        android:textColor="@color/black">
+
+    </Button>
+
+
+</RelativeLayout>
